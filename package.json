@@ -1,0 +1,46 @@
+{
+  "name": "graphql.utils",
+  "version": "0.2.0",
+  "repository": "https://github.com/bkulyk/graphql.utils",
+  "license": "MIT",
+  "description": "untilities to help validate queries",
+  "main": "index.js",
+  "bin": {
+    "graphql-utils": "index.js"
+  },
+  "files": [
+    "lib/",
+    "README.md",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "lab test -v -r console -c",
+    "lint": "node_modules/.bin/jshint ./src",
+    "lab": "lab"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "chalk": "^2.3.0",
+    "commander": "^2.14.0",
+    "dotenv": "^4.0.0",
+    "graphql": "^0.12.3",
+    "graphql-tools": "^2.21.0",
+    "object-dig": "^0.1.1",
+    "querystring": "^0.2.0",
+    "ramda": "^0.25.0",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "chai-http": "^3.0.0",
+    "codeclimate-test-reporter": "^0.5.0",
+    "jshint": "2.9.4",
+    "lab": "^14.1.0",
+    "nock": "^9.1.5",
+    "pre-commit": "^1.2.2",
+    "proxyquire": "^1.8.0"
+  }
+}

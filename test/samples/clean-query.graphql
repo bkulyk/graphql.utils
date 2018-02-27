@@ -1,0 +1,14 @@
+query speciesByFilm {
+  allFilms {
+    films {
+      title
+      episodeID
+
+      speciesConnection {
+        species{
+          name
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+# Date Time object
+scalar DateTime
+
+# JSON representation of a geo object
+scalar GeoJSON
+
+# Generic JavaScript object
+scalar JSON
+
+# Long Int
+scalar Long
+
+type Query {
+  meta: JSON
+
+  version: String
+}
+

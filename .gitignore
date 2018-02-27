@@ -1,0 +1,6 @@
+.env
+node_modules/*
+schema.json
+schema.graphql
+
+graphql.utils-*.tgz

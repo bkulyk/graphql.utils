@@ -1,0 +1,15 @@
+query brokenQuery {
+  allFilms {
+    films {
+      title
+      episodeID {
+        blah
+      }
+
+
+      field_does_not_exist
+
+      speciesConnection
+    }
+  }
+}
