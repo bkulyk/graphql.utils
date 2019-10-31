@@ -30,13 +30,13 @@ Sample output:
 ```
 brokenQuery query has the following validation errors:
 
-🛑  Field "episodeID" must not have a selection since type "Int" has no subfields.
+⯃  Field "episodeID" must not have a selection since type "Int" has no subfields.
    Locations: [{"line":5,"column":17}]
 
-🛑  Cannot query field "field_does_not_exist" on type "Film".
+⯃  Cannot query field "field_does_not_exist" on type "Film".
    Locations: [{"line":10,"column":7}]
 
-🛑  Field "speciesConnection" of type "FilmSpeciesConnection" must have a selection of subfields. Did you mean "speciesConnection { ... }"?
+⯃  Field "speciesConnection" of type "FilmSpeciesConnection" must have a selection of subfields. Did you mean "speciesConnection { ... }"?
    Locations: [{"line":12,"column":7}]
 ```
 
@@ -56,10 +56,10 @@ Sample output:
 ```
 query speciesByFilm has the following deprecation warnings:
 
-🛑  The field Film.species is deprecated. Test, use speciesConnection
+⯃  The field Film.species is deprecated. Test, use speciesConnection
     Locations: [{"line":7,"column":7}]
 
-🛑  The field Film.planets is deprecated. Test, use planetConnection
+⯃  The field Film.planets is deprecated. Test, use planetConnection
     Locations: [{"line":8,"column":7}]
 ```
 

@@ -574,6 +574,7 @@ type PlanetsEdge {
 }
 
 type Root {
+  all_films(after: String, first: Int, before: String, last: Int): FilmsConnection @deprecated(reason: "use allFilms")
   allFilms(after: String, first: Int, before: String, last: Int): FilmsConnection
   film(id: ID, filmID: ID): Film
   allPeople(after: String, first: Int, before: String, last: Int): PeopleConnection
